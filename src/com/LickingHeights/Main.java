@@ -46,7 +46,8 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     System.out.println("How many star that were formed in a year will have planets (0.2-0.5)?");
     f_p = keyboard.nextDouble();
 
-    System.out.println("");
+    System.out.println("Stars with planets will have how many planets capable of supporting life.?");
+    numberOfExoplanets = keyboard.nextInt();
 
 
     N = rStar * f_p *numberOfExoplanets *f_l *f_i *f_c * L;
