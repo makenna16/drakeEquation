@@ -23,7 +23,7 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     int N;
     int rStar;
     double f_p;
-    int numberOfExoplanets;
+    int ne;
     double f_l;
     double f_i;
     double f_c;
@@ -32,7 +32,7 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     //todo initialize the scanner to take input and commit
     //Ask for rStar number store in the rStar variable and commit
     //Ask for f_p fraction store in the f_p variable and commit
-    //Ask for numberOfExoplanets number store in the numberOfExoplanets variable and commit
+    //Ask for ne number store in the numberOfExoplanets variable and commit
     //Ask for f_l fraction store in the f_l variable and commit
     //Ask for f_i fraction store in the f_i variable and commit
     //Ask for f_c fraction store in the f_c variable and commit
@@ -47,10 +47,22 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     f_p = keyboard.nextDouble();
 
     System.out.println("Stars with planets will have how many planets capable of supporting life.?");
-    numberOfExoplanets = keyboard.nextInt();
+    ne = keyboard.nextInt();
+
+    System.out.println("How many percent of these planets will develop life?");
+    f_l = keyboard.nextDouble();
+
+    System.out.println("How many percent will develop inteeligent life?");
+    f_i = keyboard.nextDouble();
+
+    System.out.println("How much will be able to communicate? (Between two number) (decimal)");
+    f_c = keyboard.nextDouble();
+
+    System.out.println("");
 
 
-    N = rStar * f_p *numberOfExoplanets *f_l *f_i *f_c * L;
+
+    N = rStar * f_p * ne *f_l *f_i *f_c * L;
 
 
     System.out.println("The number of intelligent species that are out there \n" +
