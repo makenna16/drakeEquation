@@ -20,7 +20,7 @@ fi = 1 (100% of which will develop intelligent life)
 fc = 0.1 to 0.2 (10–20% of which will be able to communicate)
 L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,000,000 years)
  */
-    int N;
+    double N;
     int rStar;
     double f_p;
     int ne;
@@ -32,7 +32,7 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     //todo initialize the scanner to take input and commit
     //Ask for rStar number store in the rStar variable and commit
     //Ask for f_p fraction store in the f_p variable and commit
-    //Ask for ne number store in the numberOfExoplanets variable and commit
+    //Ask for ne number store in the ne variable and commit
     //Ask for f_l fraction store in the f_l variable and commit
     //Ask for f_i fraction store in the f_i variable and commit
     //Ask for f_c fraction store in the f_c variable and commit
@@ -52,14 +52,14 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     System.out.println("How many percent of these planets will develop life?");
     f_l = keyboard.nextDouble();
 
-    System.out.println("How many percent will develop inteeligent life?");
+    System.out.println("How many percent will develop intelligent life?");
     f_i = keyboard.nextDouble();
 
     System.out.println("How much will be able to communicate? (Between two number) (decimal)");
     f_c = keyboard.nextDouble();
 
-    System.out.println("");
-
+    System.out.println("How many years will they last?");
+    L = keyboard.nextInt();
 
 
     N = rStar * f_p * ne *f_l *f_i *f_c * L;
